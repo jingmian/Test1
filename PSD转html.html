@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>PSD转HTML</title>
+	<style type="text/css">
+	*{
+		box-sizing: border-box;
+		margin: 0 auto;
+	}
+	.h{
+		background: rgba(0,0,0,0.6)url(页眉.png);
+		width: 1600px;
+		height: 900px;
+		background-size: cover;
+		background-repeat: no-repeat;/*设置背景图不重复*/
+		color: white;
+		text-align: center;				
+	}
+	h1{
+		line-height: 300px;
+		font-family: Century Gothic;
+		font-size: 70px;
+
+		}
+	.box{
+		width: 1400px;
+		border-style: solid;
+		border-color: white;
+		border-size:0.5px;
+		margin: 100px 100px;
+
+	}
+	h4{
+		line-height: 4;
+	}
+	.f1{
+		margin: 50px 0;
+	}
+
+     /* .b>p表示选中b中第一个p子元素*/
+	.b>p{
+		text-align: center;
+		margin: 80px 200px;
+
+	}
+	.b span{
+		font-size: 50px;
+
+	}
+	.b .left {
+		width: 550px;
+		position: relative;
+		top: 0;
+		left: -400px;
+
+	}
+	.b .right{
+		width: 550px;
+		position: relative;
+		top: -260px;
+		right:-400px;
+		
+	}
+	.phone,.fluid,.Accessibility,.customization{
+		float: left;
+		margin-right: 20px;	
+	}
+	.l2,.r2{
+		margin-top: 60px;
+	}
+	
+	.b2{
+		position: relative;
+		top: -50px;
+		width: 1600px;
+		height: 750px;
+		background: url(Background2.png);
+		background-size: cover;
+	}
+	.b2 .left1{
+		box-sizing: content-box;
+		padding: 0;
+		padding-top: 200px;
+		width: 720px;
+		height: 500px;
+		color: white;
+		margin-left: 200px;
+	}
+	.b2 .p1{
+		font-size: 30px;
+		width: 720px;
+	}
+	.b2 .p2{
+		line-height: 1.5;
+		margin: 50px 0;
+		width: 640px;
+	}
+	.b2 a{
+		text-decoration: none;
+		color: white;
+		display: inline-block;
+		border-style: solid;
+		border-size:0.01px;
+		padding: 10px;
+	}
+	/*:hover表示鼠标悬在上面的状态*/
+	.b2 a:hover{
+		background-color: white;
+		color:black;
+	}
+	.b2 .right1{
+		position: absolute;
+		top: 200px;
+		right: 0;
+		width: 640px;
+		
+	}
+	.b2 .right1 img{
+		width: 100%;
+		height: 400px;
+
+	}
+
+	.b3{
+		position: relative;
+		top:100px;
+		width: 1600px;
+		height: 750px;
+		text-align: center;
+	}
+	.b3 .art1{
+		position: absolute;
+		top: 100px;
+		left: 96px;
+		width:400px;
+	}
+	.b3 .art2{
+		position: absolute;
+		top: 100px;
+		left: 560px;
+		width:400px;
+	}
+	.b3 .art3{
+		position: absolute;
+		top: 100px;
+		right: 96px;
+		width:400px;
+	}
+	.b3 p{
+		display: block;
+		margin-top: 30px;
+	}
+
+	.b4{
+		position: relative;
+		top: -50px;
+		left: 96px;
+		width: 1600px;
+		text-align: center;
+
+	}
+	.b4 .up img{
+		float: left;
+		margin-right: 20px;
+		width: 640px;
+		margin-bottom: 50px;
+	}
+	.b4 .up .left4{
+		display: block;
+		margin-right: 192px;
+		text-align: left;
+		
+	}
+	.b4 .down{
+		clear: both;		
+	}
+	.b4 .down img{
+		float: right;
+		margin-right: 192px;
+		margin-left: 20px;
+		width: 700px;
+		height: 400px;
+	
+	}
+	.b4 .down .right4{
+		margin-top: 30px;
+		text-align: left;
+	}
+	.b4 .down .right4 h4{
+		line-height: 2;
+		padding-top: 70px;
+	}
+
+	.b5{
+		clear: both;
+		position: relative;
+		top: 100px;
+		width: 1600px;
+		text-align:center;
+	}
+	.b5 h2{
+		line-height: 4;
+	}
+	.b5 img{
+		width: 450px;
+		height: 400px;
+		margin-right: 30px;
+		margin-top: 30px;
+	}
+	
+	.b6{
+		position: relative;
+		top: 200px;
+		left: 0;
+		width: 1600px;
+	}
+	.b6 .left6{
+		width: 600px;
+		margin:100px;
+	
+		text-align: center;
+		border-size:0.5px;
+		border-color: gray;
+		border-style: solid;
+		padding: 30px;
+		float: left;
+	}
+	.b6 .left6 input,textarea,.b6 .left6 button{
+		display: block;
+		width: 500px;
+		height: 70px;
+		margin: 60px 20px;
+	}
+	textarea{
+		height: 100px;
+	}
+	.b6 .left6 button{
+		color: white;
+		background-color: black;
+	}
+	.b6 .right6{
+		margin: 100px;
+	}
+	.b6 .right6 h2{
+		line-height: 4;
+	}
+	.b6 .right6 p{
+		padding: 100px;
+	}
+
+	footer{
+		width: 1600px;
+		height: 500px;
+		background-color: black;
+		position: relative;
+		top:400px;
+		left: 0;
+		
+	}
+	footer h3{
+		color: white;
+		padding-top: 80px;
+
+	}
+	footer a{
+		display: block;
+		text-decoration: none;
+		margin-top: 50px;
+		color: gray;
+	}
+
+	.foot1{
+		width: 300px;
+		float: left;
+		margin-left: -700px;
+	}
+	.foot2{
+		float: left;
+		margin-left: -400px;
+	}
+	.foot3{
+		float: left;
+		margin-left: -100px;
+	}
+	.foot4{
+		float: left;
+		margin-left: 200px;
+		width: 300px;
+	}
+	.foot4 p{
+		color: gray;
+		padding-top: 50px;
+	}
+	.foot4 li{
+		display: inline-block;
+		margin-right: 20px;
+	}
+
+
+	</style>
+</head>
+
+<body >
+	<div class='h'>
+		<h1>Hello World</h1>
+		<p>China is speeding up strategic plan,standars,traffic rules,laws and regulations
+		on accident-incurred liablities for its smart car industry.</p>
+		<div class='box'>
+			<h4>create your account</h4>
+			<p>it is absolutrly free</p>
+		    <form class="f1">
+		    	<input type="text" name="email"  class="f11"  placeholder="159@163.com">
+		    	<input type="password" name="mima"  placeholder="create your password">
+		    	<button>sign up</button>
+		    </form>
+		</div>
+	</div>
+
+	<div class="b">
+		<p>BOATLOADS OF AWESOME</br>
+	        <span>Ready-made,customizable,HTML landing page sections</span>
+        </p>
+        <div class="left">
+        	<img src="phone.png" class="phone">
+        	<article>
+        		<h5>Mobile First</h5>
+        		<p>
+        			All modula are built mobile-first for maximum device compatibility.
+        		</p>
+        	</article>
+        	<div class="l2">
+        	<img src="fluid.png" class="fluid">
+        	<article>
+        		<h5>Fluid Typography</h5>
+        		<p>
+        			On different screen sizes, fonts automagically scale with the viewport.
+        		</p>
+        	</article>
+        	</div>
+        </div>
+        <div class="right">
+        	<div class="r1">
+        	<img src="Accessibility.png" class="Accessibility">
+        	<article>
+        		<h5>Accessibility</h5>
+        		<p>
+        			Support for IE8, mobile and tablet devices, screenreaders and color blind .
+        		</p>
+        	</article>
+        </div>
+        <div class="r2">
+        	<img src="customization.png" class="customization">
+        	<article>
+        		<h5>Customization</h5>
+        		<p>
+        		  Make any design your own using the Style Editor. Personalize fonts, colors, and layouts to create the custom look you want.
+        		</p>
+        	</article>
+        </div>        		        	
+        </div>
+
+
+
+	<div class="b2">
+		<div class="left1">
+			<p class="p1">Supportive policies for China's smart car
+			</p>
+			<p class="p2">China will come up with its own smart car standards, traffic rules, 
+            laws and regulations relating to safety, according to the China Industry 
+            Innovation Alliance for the Intelli-gent and Connected Vehicles.</p>
+        
+            <a href="#">CHRCK OUT FEATURES</a>
+            <a href="#">CHRCK OUT FEATURES</a>
+            </div>
+			
+		<div class="right1">
+			<img src="Screen.png" >
+		</div>
+	</div>
+
+	<div class="b3">
+		<h2>Try Our Awesome Products</h2>
+		<article class="art1">
+			<img src="sing.png">
+			<p>Li Jun, a China Academy of Engineering academician and also director of the alliance's experts' committee, said that China will also launch design guidance for smart cars, smart map architecture and standards for test grounds.
+			</p>
+		</article>
+		<article class="art2">
+			<img src="hero.png">
+			<p>
+				Li said the smart car industry is able to enlarge the current car industry by 1 trillion yuan ($158.15 billion) and also able to boost fast development in 5G, internet of cars, big data, artificial intelligence and new- energy vehicles.
+			</p>
+		</article>
+		<article class="art3">
+			<img src="po.png">
+			<p>
+				Zhang Junyi, a partner with NIO Capital, said that the smart car is the trend for the car industry and China's auto sector will usher in a new key development stage with the improvement of infrastructure, technology, policies and laws.
+			</p>
+		</article>
+	</div>
+
+
+	<div class="b4">
+		<div class="up">
+			<img src="图层 3.png">
+			<article class="left4">
+				<h4>Learn How to Improve Your Personal Business</h4>
+				<p>
+					Li Jun, a China Academy of Engineering academician and also director of the alliance's experts' committee, said that China will also launch design guidance for smart cars, smart map architecture and standards for test grounds.
+				</p>
+			</article>
+		</div>
+		<div class="down">
+			<img src="图层 4.png">
+			<article class="right4">
+			<h4>Choose Between Two Beautifully Designed Color Schemes.</h4>
+			<p>
+				China will come up with its own smart car standards, traffic rules, laws and regulations relating to safety, according to the China Industry Innovation Alliance for the Intelligent and Connected Vehicles.
+			</p>
+		    </article>
+		</div>
+	</div>
+
+	<div class="b5">
+		<hr>
+		<h2>Our Awesome Crew</h2>
+		<p>Our unique online teaching style makes learning easy for everyone. Whether you are trying to land a new job, brush up on your skills.</p>
+		<img src="张思远大.png" class="p1">
+		<img src="詹方小.png" class="p2"><br>
+		<img src="沈大师大.png" class="p3">
+		<img src="3.png" class="p4">
+	</div>
+
+
+	<div class="b6">
+		<hr>
+		<div class="left6">
+			<h5>FELL FR TO WRITE US</h5>
+			<input type="text" name="E-mail" placeholder="E-mail">
+			<input type="text" name="Subject"placeholder="Subject">
+			<textarea placeholder="Message"></textarea>
+			<button>SEND</button>
+		</div>
+		<div class="right6">
+			<h2>Contacts</h2>
+			<p>Make any design your own using the Style Editor. Personalize fonts, colors, and layouts to create the custom look you want.</p>
+			<ul>
+				<li>360 King Street
+                    Feastrvale Trevose, PA 19057</li>
+                <li>(755) 564-84-12</li>
+                <li>youname@mail.com</li>
+			</ul>
+		</div>
+	</div>
+
+	<footer>
+		<div class="foot1">
+			<h3>Learn More</h3>
+			<a href="#">how if work</a>
+			<a href="#">Meeting tools</a>
+			<a href="#">Live streaming</a>
+			<a href="#">Contact method</a>
+		</div>
+		<div class="foot2">
+			<h3>About Us</h3>
+			<a href="#">About us</a>
+			<a href="#">Features</a>
+			<a href="#">Privacy police</a>
+			<a href="#">Terms & Conditions</a>
+		</div>
+		<div class="foot3">
+			<h3>Support</h3>
+			<a href="#">F.A.Q.</a>
+			<a href="#">Contact us</a>
+			<a href="#">PContact us</a>
+			<a href="#">Phone call</a>
+		</div>
+		<div class="foot4">
+			<h3>Enjoy your Life</h3>
+			<p>Great web UI kit for designers, freelancers or business.</p>
+			<ul class="foot4.1">
+				<li><img src="qie_03.png"></li>
+				<li><img src="qie_07.png"></li>
+				<li><img src="qie_10.png"></li>
+				<li><img src="qie_12.png"></li>
+			</ul>
+		</div>
+	</footer>
+
+
+</body>
+</html>
